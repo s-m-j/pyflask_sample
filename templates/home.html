@@ -1,56 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ГиперСофт</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <style>
-      h1 {
-        font-size: 40px;
-        font-family: Roboto;
-        font-weight: normal;
-        color: rgb(100, 100, 100);
-        text-align: center;
-      }
-
       #banner {
-        width: 100%;
         height: 360px;
+        width: 100%;
         object-fit: cover;
-      }
-
-      h2 {
-        font-family: Roboto;
-        font-size: 36px;
-        color: rgb(50, 50, 50);
-        text-align: center;
-      }
-
-      p {
-        font-family: Roboto;
-        color: rgb(80, 80, 80);
-      }
-
-      .bodytext {
-        font-family: Roboto;
-        color: rgb(80, 80, 80);
-      }
-
-      #container {
-        max-width: 720px;
-        margin: 0 auto 0 auto;
       }
     </style>
   </head>
   <body>
-    <div id="container">
-      <h1>Вакансии ГиперСофт</h1>
-      <img id="banner" src="/static/banner.jpg" height="320px">
-      <h2>Немного о нас</h2>
-      <p class="bodytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam. Integer vitae justo eget magna fermentum iaculis eu. Egestas egestas fringilla phasellus faucibus scelerisque. Ac turpis egestas sed tempus urna et pharetra pharetra massa. Neque gravida in fermentum et sollicitudin ac orci phasellus. Posuere lorem ipsum dolor sit amet. Pulvinar pellentesque habitant morbi tristique senectus. Ut diam quam nulla porttitor massa id. Turpis egestas integer eget aliquet nibh praesent tristique. Lorem ipsum dolor sit amet consectetur adipiscing elit. Vitae aliquet nec ullamcorper sit amet. Sed felis eget velit aliquet sagittis id consectetur purus. Proin sed libero enim sed faucibus. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Hendrerit gravida rutrum quisque non. </p>
-      <h2>Открытые вакансии</h2>
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">Вакансии ГиперСофт</h1>
+      <img class="img-fluid" id="banner" src="/static/banner.jpg">
+      <h2 class="text-center mt-2 mb-4">Немного о нас</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam. Integer vitae justo eget magna fermentum iaculis eu. Egestas egestas fringilla phasellus faucibus scelerisque. Ac turpis egestas sed tempus urna et pharetra pharetra massa. Neque gravida in fermentum et sollicitudin ac orci phasellus. Posuere lorem ipsum dolor sit amet. Pulvinar pellentesque habitant morbi tristique senectus. Ut diam quam nulla porttitor massa id. Turpis egestas integer eget aliquet nibh praesent tristique. Lorem ipsum dolor sit amet consectetur adipiscing elit. Vitae aliquet nec ullamcorper sit amet. Sed felis eget velit aliquet sagittis id consectetur purus. Proin sed libero enim sed faucibus. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Hendrerit gravida rutrum quisque non. </p>
+      <h2 class="text-center mt-2 mb-4">Открытые вакансии</h2>
       <p>TODO: Сделать список вакансий</p>
-      <div style="text-align: center;">
-        <button>Написать нам</button>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg">Написать нам</button>
       </div>
     </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
   </body>
 </html>
