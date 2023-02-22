@@ -22,7 +22,21 @@
       <h2 class="text-center mt-2 mb-4">Немного о нас</h2>
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam. Integer vitae justo eget magna fermentum iaculis eu. Egestas egestas fringilla phasellus faucibus scelerisque. Ac turpis egestas sed tempus urna et pharetra pharetra massa. Neque gravida in fermentum et sollicitudin ac orci phasellus. Posuere lorem ipsum dolor sit amet. Pulvinar pellentesque habitant morbi tristique senectus. Ut diam quam nulla porttitor massa id. Turpis egestas integer eget aliquet nibh praesent tristique. Lorem ipsum dolor sit amet consectetur adipiscing elit. Vitae aliquet nec ullamcorper sit amet. Sed felis eget velit aliquet sagittis id consectetur purus. Proin sed libero enim sed faucibus. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Hendrerit gravida rutrum quisque non. </p>
       <h2 class="text-center mt-2 mb-4">Открытые вакансии</h2>
-      <p>TODO: Сделать список вакансий</p>
+      <div>
+        {% for job in jobs %}
+        <div>
+          <h4 style="color: rgb(120, 120, 120); margin-bottom:4px;">{{job['title']}}</h4>
+          <div>
+            <b>Локация:</b> {{job['location']}}
+          </div>
+          {% if 'salary' in job %}
+          <div>
+            <b>Доход:</b> {{job['salary']}}
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Написать нам</button>
       </div>
