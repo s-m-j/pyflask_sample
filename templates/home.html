@@ -13,15 +13,26 @@
         height: 360px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px;
       }
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="/static/banner.jpg">
     <div class="container">
       <h1 class="text-center mt-2 mb-4">Вакансии ГиперСофт</h1>
-      <img class="img-fluid" id="banner" src="/static/banner.jpg">
       <h2 class="text-center mt-2 mb-4">Немного о нас</h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam. Integer vitae justo eget magna fermentum iaculis eu. Egestas egestas fringilla phasellus faucibus scelerisque. Ac turpis egestas sed tempus urna et pharetra pharetra massa. Neque gravida in fermentum et sollicitudin ac orci phasellus. Posuere lorem ipsum dolor sit amet. Pulvinar pellentesque habitant morbi tristique senectus. Ut diam quam nulla porttitor massa id. Turpis egestas integer eget aliquet nibh praesent tristique. Lorem ipsum dolor sit amet consectetur adipiscing elit. Vitae aliquet nec ullamcorper sit amet. Sed felis eget velit aliquet sagittis id consectetur purus. Proin sed libero enim sed faucibus. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Hendrerit gravida rutrum quisque non. </p>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere ac ut consequat semper viverra nam. Integer vitae justo eget magna fermentum iaculis eu. Egestas egestas fringilla phasellus faucibus scelerisque. Ac turpis egestas sed tempus urna et pharetra pharetra massa. Neque gravida in fermentum et sollicitudin ac orci phasellus. Posuere lorem ipsum dolor sit amet. Pulvinar pellentesque habitant morbi tristique senectus. Ut diam quam nulla porttitor massa id. Turpis egestas integer eget aliquet nibh praesent tristique. Lorem ipsum dolor sit amet consectetur adipiscing elit. Vitae aliquet nec ullamcorper sit amet. Sed felis eget velit aliquet sagittis id consectetur purus. Proin sed libero enim sed faucibus. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Hendrerit gravida rutrum quisque non. 
+          </p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+		      <img src="/static/people.jpg" style="height:320px;border-radius:5px">
+        </div>  
+      </div>
       <h2 class="text-center mt-2 mb-4">Открытые вакансии</h2>
       <div>
         {% for job in jobs %}
@@ -29,9 +40,10 @@
         {% endfor %}
       </div>
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Написать нам</button>
+        <a href="mailto:ssmaslov@mail.ru?subject=Вопросы по открытым вакансиям" class="btn btn-primary btn-lg">Написать нам</a>
       </div>
     </div>
+    {% include 'footer.html' %}
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

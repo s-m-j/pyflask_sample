@@ -26,6 +26,12 @@ JOBS=[
     'title': "Senior Data Analyst",
     'location': 'Moscow',
     'salary': 'Rub: 280000'
+  },
+  {
+    'id': 5,
+    'title': "Boss",
+    'location': 'London',
+    'salary': 'Rub: 280000000'
   }
 ]
 
