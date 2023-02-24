@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>{{job.title}} ГиперСофт</title>
+    {% include 'bootstrap.html' %}
   </head>
-  {% include 'bootstrap.html' %}
   <body>
     {% include 'nav.html' %}
     {% include 'banner.html' %}
@@ -35,9 +35,7 @@
       </p>
       <h3>Оклад</h3>
       <p>{{job.salary}} {{job.currency}}</p>
-      <div class="col-3">
-        <a href="mailto:ssmaslov@mail.ru?subject=Отклик на вакансию {{job['title']}}" type="button" class="btn btn-outline-primary">Откликнуться</a>
-      </div> 
+      {% include 'application_form.html' %} 
     </div>
     {% include 'footer.html' %}
   </body>

@@ -1,0 +1,35 @@
+<h4>Откликнуться на вакансию</h4>
+<form action="/job/{{job['id']}}/apply" method="post">
+  <div class="mb-2">
+    <label>ФИО</label><br>
+    <input type="text" name="full_name" placeholder="Bill Gates">
+  </div>
+    
+  <div class="mb-2">
+    <label>email</label><br>
+    <input type="text" name="email" placeholder="bill@microsoft.com">
+  </div>
+
+  <div  class="mb-2">
+    <label>LinkedIn</label><br>
+    <input type="text" name="linkedin_url" placeholder="https://linked.com/in/billgates">
+  </div>
+
+  <div>
+    <label>Образование</label><br>
+    <textarea name="education"></textarea>
+  </div>
+
+  <div>
+    <label>Опыт работы</label><br>
+    <textarea name="work_experience"></textarea>
+  </div>
+
+  <div  class="mb-2">
+    <label>Ссылка на резюме</label><br>
+    <input type="text" name="resume_url">
+  </div>
+
+  <input type="submit">
+  
+</form>
