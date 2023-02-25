@@ -2,17 +2,17 @@
 <form action="/job/{{job['id']}}/apply" method="post">
   <div class="mb-2">
     <label>ФИО</label><br>
-    <input type="text" name="full_name" placeholder="Bill Gates">
+    <input type="text" name="full_name" required placeholder="Bill Gates">
   </div>
     
   <div class="mb-2">
     <label>email</label><br>
-    <input type="text" name="email" placeholder="bill@microsoft.com">
+    <input type="email" name="email" required placeholder="bill@microsoft.com">
   </div>
 
   <div  class="mb-2">
     <label>LinkedIn</label><br>
-    <input type="text" name="linkedin_url" placeholder="https://linked.com/in/billgates">
+    <input type="url" name="linkedin_url" placeholder="https://linked.com/in/billgates">
   </div>
 
   <div>
@@ -27,7 +27,7 @@
 
   <div  class="mb-2">
     <label>Ссылка на резюме</label><br>
-    <input type="text" name="resume_url">
+    <input type="url" name="resume_url">
   </div>
 
   <input type="submit">
